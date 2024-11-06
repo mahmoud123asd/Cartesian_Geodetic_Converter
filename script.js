@@ -43,7 +43,7 @@ function convertToCart() {
     let lamdaMin = parseFloat(document.getElementById("lamda_min").value)
     let lamdaSec = parseFloat(document.getElementById("lamda_sec").value)
 
-    let Lam = ConvertDMSToRadians(lamdaDeg, lamdaDeg, lamdaSec)
+    let Lam = ConvertDMSToRadians(lamdaDeg, lamdaMin, lamdaSec)
 
     console.log(Ph)
     console.log(Lam)
