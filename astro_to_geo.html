@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomic to geodetic</title>
+    <link rel="stylesheet" href="astro_to_geo.css">
+    <script defer src="astro_to_geo.js"></script>
+</head>
+<body>
+    <header class="header">
+        Astronmic To Geadetic
+    </header>
+    <div class="main">
+        <form class="conversion_form">
+            <div style="text-align: center;">
+                <p style="font-size: 20px; font-weight: bold; margin:0">&#966;<sub>A</sub></p>
+
+                <label for="lat_deg">deg</label>
+                <input type="text" id="lat_deg" required>
+                <label for="lat_min">min</label>
+                <input type="text" id="lat_min" required>
+                <label for="lat_seconds">sec</label>
+                <input type="text" id="lat_sec" required>
+            </div>
+            
+            <div style="text-align: center;">
+                <p style="font-size: 20px; font-weight: bold; margin:0">Λ</p>
+
+                <label for="lambda_deg">deg</label>
+                <input type="text" id="lambda_deg" required>
+                <label for="lambda_min">min</label>
+                <input type="text" id="lambda_min" required>
+                <label for="lambda_sec">sec</label>
+                <input type="text" id="lambda_sec" required>
+            </div>
+            
+            <div>
+                <label for="H">H</label>
+                <input type="text" id="H" required>
+            </div>
+            
+            <div>
+                <label for="N">N</label>
+                <input type="text" id="N" required>
+            </div>
+            
+            <div style="text-align: center;">
+                <p style="font-size: 20px; font-weight: bold; margin:0">ζ</p>
+
+                <label for="zeta_deg">deg</label>
+                <input type="text" id="zeta_deg" required>
+                <label for="zeta_min">min</label>
+                <input type="text" id="zeta_min" required>
+                <label for="zeta_sec">sec</label>
+                <input type="text" id="zeta_sec" required>
+            </div>
+            
+            <div style="text-align: center;">
+                <p style="font-size: 20px; font-weight: bold; margin:0">η</p>
+
+                <label for="eta_deg">deg</label>
+                <input type="text" id="eta_deg" required>
+                <label for="eta_min">min</label>
+                <input type="text" id="eta_min" required>
+                <label for="eta_sec">sec</label>
+                <input type="text" id="eta_sec" required>
+            </div>
+    
+            <input class="submit_btn" type="submit" value="Convert To Geodetic" required>
+        </form>
+
+        <table class="results_table">
+            <tr>
+                <td>&#966;<sub>G</sub></td>
+                <td class="geo_lat"></td>
+            </tr>
+            <tr>
+                <td>λ</td>
+                <td class="geo_lambda"></td>
+            </tr>
+            <tr>
+                <td>h</td>
+                <td class="geo_height"></td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
