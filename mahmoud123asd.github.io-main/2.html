@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geodetic To Cartesian</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <center>
+        <div>
+            <h1>Geodetic To Cartesian</h1>
+        </div>
+        <div>
+            <form onsubmit="return false;" id="geo_cart_form">
+                <p><strong>Phai</strong></p>
+                <label for="phai_deg">Degrees</label>
+                <input type="text" id="phai_deg" class="geo_cart_in">
+                <label for="phai_min">Minutes</label>
+                <input type="text" id="phai_min" class="geo_cart_in">
+                <label for="phia_sec">Seconds</label>
+                <input type="text" id="phai_sec" class="geo_cart_in">
+                <p><strong>Lamda</strong></p>
+                <label for="lamda_deg">Degrees</label>
+                <input type="text" id="lamda_deg"  class="geo_cart_in">
+                <label for="lamda_min">Minutes</label>
+                <input type="text" id="lamda_min"  class="geo_cart_in">
+                <label for="lamda_sec">Seconds</label>
+                <input type="text" id="lamda_sec"  class="geo_cart_in">
+                <br>
+                <p><strong>H</strong></p>
+                <input type="text" id="h" class="cart_geo_in">
+                <br>
+                <button type="submit">Convert</button>
+            </form>
+        </div>
+        <div id="result">
+    
+        </div>
+        <div>
+            <a href="index.html"><button>Cartesian To Geodetic</button></a>
+
+        </div>
+    </center>
+
+</body>
+</html>
